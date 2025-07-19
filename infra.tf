@@ -36,8 +36,9 @@ module "cloud-ec2-module" {
   az            = module.cloud-compute-module.a_zone
   comman_tags   = module.cloud-compute-module.local_tags
   Env           = "dev"
+  pub_sub       = module.cloud-compute-module.pub_sub
 
-}
+} 
 module "cloud-alb-module" {
   source  = "app.terraform.io/Pulla-dev-test/cloud-alb-module/terraform"
   version = "1.0.0"
