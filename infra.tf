@@ -45,6 +45,6 @@ module "cloud-alb-module" {
   sg_id        = module.cloud-sg-module.sg_id
   sub_id       = module.cloud-compute-module.pub_sub
   vpc_id       = module.cloud-compute-module.vpc_id
-  instance_id  = module.cloud-ec2-module.instance_list
+  inttance_id  = module.cloud-ec2-module.instance_list
   pub_instance = module.cloud-ec2-module.instance_list
 }
